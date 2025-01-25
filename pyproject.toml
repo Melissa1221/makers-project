@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "makers-tech-chatbot"
+version = "0.1.0"
+description = "A ChatBot for Makers Tech e-commerce providing real-time inventory updates and product information"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0"
+sqlalchemy = "^2.0.25"
+langchain = "^0.1.0"
+psycopg2-binary = "^2.9.9"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+pydantic = {extras = ["email"], version = "^2.5.3"}
+pydantic-settings = "^2.1.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.0"
+pytest = "^7.4.4"
+pre-commit = "^3.6.0"
+pytest-cov = "^4.1.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
