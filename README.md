@@ -26,7 +26,7 @@ In addition to the main functionality, optional features include a product recom
 
 ## Technologies Used
 - **Backend:** FastAPI, LangChain, SQLAlchemy
-- **Frontend:** Remix, React
+- **Frontend:**  React
 - **Database:** PostgreSQL
 - **Visualization:** Chart.js or D3.js (for dashboard metrics)
 - **Authentication:** JWT-based authentication for secure user sessions
