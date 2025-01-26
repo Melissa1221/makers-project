@@ -5,6 +5,7 @@ This module contains the main FastAPI application instance and its configuration
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.routers import users, products
 
 app = FastAPI(
     title="Makers Tech ChatBot",
@@ -24,6 +25,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(users.router)
+app.include_router(products.router)
 
 @app.get("/")
 async def root():
